@@ -1,21 +1,33 @@
-## Installation
+# For readers
 
+- Visit https://mihanizm56.github.io/codestyle/
+
+# For maintainers
+
+### Installation
 ```console
 yarn install
 ```
-
-## Local Development
-
+### Local Development
 ```console
-yarn start
+npm start
+```
+### Build
+```console
+npm run build
 ```
 
-This command starts a local development server and open up a browser window. Most changes are reflected live without having to restart the server.
-
-## Build
-
+### Serve build
 ```console
-yarn build
+npm run serve
 ```
 
-This command generates static content into the `build` directory and can be served using any static contents hosting service.
+### Clear local cache
+```console
+npm run clear
+```
+
+### Make commit
+```console
+npm run commit
+```
