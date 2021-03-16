@@ -10,21 +10,19 @@ module.exports = {
     },
     {
       type: 'category',
-      label: 'Typescript',
+      label: 'Работа с Git',
       items: [
-        'typescript/javascript',
-        'typescript/naming',
-        'typescript/patterns',
-        'typescript/react',
-        'typescript/redux'
+        'git/branches-names',
+        'git/features-hotfixes',
+        'git/releases-tags',
       ]
     },
     {
       type: 'category',
       label: 'Файловая структура',
       items: [
-        'project-sctructure/description',
-        'project-sctructure/scheme'
+        'project-sctructure/scheme',
+        'project-sctructure/description'
       ]
     },
     {
@@ -37,11 +35,22 @@ module.exports = {
     },
     {
       type: 'category',
+      label: 'Typescript',
+      items: [
+        'typescript/patterns',
+        'typescript/naming',
+        'typescript/javascript',
+        'typescript/react',
+        'typescript/redux'
+      ]
+    },
+    {
+      type: 'category',
       label: 'React',
       items: [
-        'react/forms',
         'react/hooks',
         'react/patterns',
+        'react/forms',
         'react/ui-kit'
       ]
     },
@@ -49,47 +58,39 @@ module.exports = {
       type: 'category',
       label: 'Redux',
       items: [
-        'redux/api',
+        'redux/patterns',
+        'redux/naming',
+        'redux/types',
         'redux/ducks',
         'redux/mapstate-mapdispatch',
-        'redux/naming',
         'redux/redux-core',
         'redux/redux-magic',
-        'redux/patterns',
-        'redux/types'
+        'redux/api',
       ]
     },
     {
       type: 'category',
       label: 'Форматирование',
       items: [
-        'formatting/autoformatting',
         'formatting/eslint',
+        'formatting/stylelint',
+        'formatting/autoformatting',
         'formatting/precommit',
-        'formatting/stylelint'
-    ]
-    },
-    {
-      type: 'category',
-      label: 'Работа с Git',
-      items: [
-        'git/branches-names',
-        'git/features-hotfixes',
-        'git/releases-tags',
       ]
     },
     {
       type: 'category',
       label: 'Boileplate v2',
       items: [
-        'boilerplate/proxysetup',
+        'boilerplate/install',
+        'boilerplate/npm-npx',
         'boilerplate/cli',
         'boilerplate/prepare',
-        'boilerplate/npm-npx',
-        'boilerplate/install',
+        'boilerplate/configs',
+        'boilerplate/proxysetup',
         'boilerplate/mock-server',
         'boilerplate/versions-update',
-        'boilerplate/configs',
+        'boilerplate/npm-install',
       ]
     },
   ]
