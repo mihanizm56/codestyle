@@ -1,12 +1,13 @@
 {
-  "name": "fetch-api",
-  "version": "3.6.3",
+  "name": "codestyle",
+  "version": "1.0.0",
   "private": true,
   "scripts": {
     "start": "docusaurus start --no-open",
     "build": "docusaurus build",
     "serve": "docusaurus serve",
-    "clear": "docusaurus clear"
+    "clear": "docusaurus clear",
+    "commit": "git add . && git commit --no-edit"
   },
   "dependencies": {
     "@docusaurus/core": "2.0.0-alpha.70",
@@ -15,7 +16,11 @@
     "clsx": "1.1.1",
     "dotenv": "8.2.0",
     "react": "16.8.4",
-    "react-dom": "16.8.4"
+    "react-dom": "16.8.4",
+    "@commitlint/cli": "9.1.2",
+    "commitizen": "4.2.1",
+    "cz-customizable": "6.2.0",
+    "husky": "3.0.9"
   },
   "browserslist": {
     "production": [
@@ -28,5 +33,20 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "husky": {
+    "hooks": {
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS -g config/git/commitlint.js",
+      "pre-commit": "npm run build",
+      "prepare-commit-msg": "node ./config/git/prepare-commit.js"
+    }
+  },
+  "config": {
+    "commitizen": {
+      "path": "node_modules/cz-customizable"
+    },
+    "cz-customizable": {
+      "config": "config/git/commitizen.js"
+    }
   }
 }

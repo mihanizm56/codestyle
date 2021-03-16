@@ -16,6 +16,11 @@ module.exports = {
     },
     {
       type: 'category',
+      label: 'Файловая структура',
+      items: ['project-sctructure/project-sctructure']
+    },
+    {
+      type: 'category',
       label: 'Работа с библиотеками',
       items: ['libraries/libraries']
     },
@@ -31,13 +36,12 @@ module.exports = {
     },
     {
       type: 'category',
-      label: 'databus',
-      items: ['databus/databus']
+      label: 'Форматирование',
+      items: ['formatting/formatting']
     },
     {
-      type: 'category',
-      label: 'formatti',
-      items: ['formatting/formatting']
+      type: 'doc',
+      id: 'git'
     },
   ]
 };

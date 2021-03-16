@@ -43,6 +43,10 @@ module.exports = {
           docId: 'overview',
         },
         {
+          type: 'docsVersionDropdown',
+          position: 'right',
+        },
+        {
           href: 'https://github.com/mihanizm56/codestyle',
           label: 'GitHub',
           position: 'right',
