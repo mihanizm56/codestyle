@@ -17,50 +17,33 @@ const algoliaParams = {
 }
 
 module.exports = {
-  title: 'Fetch-API',
-  tagline: 'Api client based of native fetch api with a lot of features',
+  title: 'Codestyle',
+  tagline: 'Документация по написанию проектов',
   url: 'https://mihanizm56.github.io',
-  baseUrl: '/',
+  baseUrl: '/codestyle/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/like.svg',
   organizationName: 'mihanizm56',
-  projectName: 'Fetch-API',
+  projectName: 'Codestyle',
   themeConfig: {
     theme: require('prism-react-renderer/themes/github'),
     hideableSidebar: true,
     // algolia: algoliaParams,
     navbar: {
-      title: 'Fetch-API',
-      hideOnScroll: true,
       logo: {
-        alt: 'Fetch-API Logo',
+        alt: 'Codestyle Logo',
         src: 'img/like.svg',
       },
       items: [
         {
           type: 'doc',
-          label: 'Documentation',
+          label: 'Документация',
           position: 'left',
           docId: 'overview',
         },
         {
-          type: 'doc',
-          label: 'API',
-          position: 'left',
-          docId: 'api/api',
-        },
-        {
-          to: 'https://github.com/mihanizm56/fetch-api',
-          label: 'Star me',
-          position: 'right',
-        },
-        {
-          type: 'docsVersionDropdown',
-          position: 'right',
-        },
-        {
-          href: 'https://github.com/mihanizm56/fetch-api',
+          href: 'https://github.com/mihanizm56/codestyle',
           label: 'GitHub',
           position: 'right',
         },
@@ -76,7 +59,7 @@ module.exports = {
       {
         docs: {
           sidebarPath: require.resolve('./sidebars.config.js'),
-          editUrl: 'https://github.com/mihanizm56/fetch-api/tree/feature/docs',
+          editUrl: 'https://github.com/mihanizm56/codestyle/tree/master',
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
