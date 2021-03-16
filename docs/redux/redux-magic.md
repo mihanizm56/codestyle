@@ -1,0 +1,4 @@
+---
+title: Redux magic loader
+---
+
