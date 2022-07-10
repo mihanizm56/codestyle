@@ -21,8 +21,8 @@ module.exports = {
       type: 'category',
       label: 'Файловая структура',
       items: [
-        'project-sctructure/scheme',
-        'project-sctructure/description'
+        'project-structure/scheme',
+        'project-structure/description'
       ]
     },
     {
@@ -37,8 +37,6 @@ module.exports = {
       type: 'category',
       label: 'Typescript',
       items: [
-        'typescript/patterns',
-        'typescript/naming',
         'typescript/javascript',
         'typescript/react',
         'typescript/redux'
@@ -72,8 +70,7 @@ module.exports = {
       type: 'category',
       label: 'Форматирование',
       items: [
-        'formatting/eslint',
-        'formatting/stylelint',
+        'formatting/linters',
         'formatting/autoformatting',
         'formatting/precommit',
       ]
@@ -92,6 +89,10 @@ module.exports = {
         'boilerplate/versions-update',
         'boilerplate/npm-install',
       ]
+    },
+    {
+      type: 'doc',
+      id: 'videos'
     },
   ]
 };

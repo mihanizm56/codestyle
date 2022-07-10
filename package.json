@@ -10,17 +10,17 @@
     "commit": "git add . && git commit --no-edit"
   },
   "dependencies": {
+    "@commitlint/cli": "9.1.2",
     "@docusaurus/core": "2.0.0-alpha.72",
     "@docusaurus/preset-classic": "2.0.0-alpha.72",
     "@mdx-js/react": "1.6.21",
     "clsx": "1.1.1",
-    "dotenv": "8.2.0",
-    "react": "16.8.4",
-    "react-dom": "16.8.4",
-    "@commitlint/cli": "9.1.2",
     "commitizen": "4.2.1",
     "cz-customizable": "6.2.0",
-    "husky": "3.0.9"
+    "dotenv": "8.2.0",
+    "husky": "3.0.9",
+    "react": "16.8.4",
+    "react-dom": "16.8.4"
   },
   "browserslist": {
     "production": [
