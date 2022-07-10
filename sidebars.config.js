@@ -46,7 +46,6 @@ module.exports = {
       type: 'category',
       label: 'React',
       items: [
-        'react/hooks',
         'react/patterns',
         'react/forms',
         'react/ui-kit'
