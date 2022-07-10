@@ -21,8 +21,7 @@ module.exports = {
       type: 'category',
       label: 'Файловая структура',
       items: [
-        'project-structure/scheme',
-        'project-structure/description'
+        'project-structure/scheme'
       ]
     },
     {
