@@ -17,3 +17,4 @@ import Link from '@docusaurus/Link';
 - <Link to='https://youtu.be/T7_jIQowNac'>Обзор работы со storybook</Link> 
 - <Link to='https://youtu.be/Ax75Dc0UaFI'>Оптимизации переходов</Link> 
 - <Link to='https://youtu.be/wS6Z8gSB53c'>ui kit. импорты внутри кита и проверка бандла проектов</Link> 
+- <Link to='https://www.youtube.com/watch?v=DU4jVtHc8-I&t=358s&ab_channel=WildTech'>Доклад про @mihanizm56/webpack-magic-redux-modules</Link> 
