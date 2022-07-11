@@ -12,9 +12,7 @@ module.exports = {
       type: 'category',
       label: 'Работа с Git',
       items: [
-        'git/branches-names',
-        'git/features-hotfixes',
-        'git/releases-tags',
+        'git/process'
       ]
     },
     {
@@ -58,7 +56,7 @@ module.exports = {
         'redux/naming',
         'redux/types',
         'redux/ducks',
-        'redux/mapstate-mapdispatch',
+        // 'redux/mapstate-mapdispatch',
         'redux/redux-core',
         'redux/redux-magic',
         'redux/api',
@@ -73,21 +71,21 @@ module.exports = {
         'formatting/precommit',
       ]
     },
-    {
-      type: 'category',
-      label: 'Boileplate v2',
-      items: [
-        'boilerplate/install',
-        'boilerplate/npm-npx',
-        'boilerplate/cli',
-        'boilerplate/prepare',
-        'boilerplate/configs',
-        'boilerplate/proxysetup',
-        'boilerplate/mock-server',
-        'boilerplate/versions-update',
-        'boilerplate/npm-install',
-      ]
-    },
+    // {
+    //   type: 'category',
+    //   label: 'Boileplate v2',
+    //   items: [
+    //     'boilerplate/install',
+    //     'boilerplate/npm-npx',
+    //     'boilerplate/cli',
+    //     'boilerplate/prepare',
+    //     'boilerplate/configs',
+    //     'boilerplate/proxy-setup',
+    //     'boilerplate/mock-server',
+    //     'boilerplate/versions-update',
+    //     'boilerplate/npm-install',
+    //   ]
+    // },
     {
       type: 'doc',
       id: 'videos'

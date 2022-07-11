@@ -23,7 +23,7 @@ module.exports = {
   baseUrl: '/codestyle/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
-  favicon: 'img/like.svg',
+  favicon: 'favicon.ico',
   organizationName: 'mihanizm56',
   projectName: 'Codestyle',
   themeConfig: {
@@ -33,7 +33,7 @@ module.exports = {
     navbar: {
       logo: {
         alt: 'Codestyle Logo',
-        src: 'img/like.svg',
+        src: 'logo.png',
       },
       items: [
         {
@@ -68,7 +68,6 @@ module.exports = {
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
         },
-        excludeNextVersionDocs: true,
       },
     ],
   ],

@@ -1,3 +1,0 @@
----
-title: Файл proxySetup.js
----
