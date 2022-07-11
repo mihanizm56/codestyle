@@ -9,18 +9,12 @@ module.exports = {
       id: 'javascript'
     },
     {
-      type: 'category',
-      label: 'Работа с Git',
-      items: [
-        'git/process'
-      ]
+      type: 'doc',
+      id: 'git-process'
     },
     {
-      type: 'category',
-      label: 'Файловая структура',
-      items: [
-        'project-structure/scheme'
-      ]
+      type: 'doc',
+      id: 'project-structure'
     },
     {
       type: 'category',

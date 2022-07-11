@@ -1,5 +1,5 @@
 ---
-title: Git процесс
+title: Работа с Git
 ---
 
 ![Git TBD](/img/git.jpg)
