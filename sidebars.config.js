@@ -50,7 +50,6 @@ module.exports = {
         'redux/naming',
         'redux/types',
         'redux/ducks',
-        // 'redux/mapstate-mapdispatch',
         'redux/redux-core',
         'redux/redux-magic',
         'redux/api',
@@ -65,21 +64,19 @@ module.exports = {
         'formatting/precommit',
       ]
     },
-    // {
-    //   type: 'category',
-    //   label: 'Boileplate v2',
-    //   items: [
-    //     'boilerplate/install',
-    //     'boilerplate/npm-npx',
-    //     'boilerplate/cli',
-    //     'boilerplate/prepare',
-    //     'boilerplate/configs',
-    //     'boilerplate/proxy-setup',
-    //     'boilerplate/mock-server',
-    //     'boilerplate/versions-update',
-    //     'boilerplate/npm-install',
-    //   ]
-    // },
+    {
+      type: 'category',
+      label: 'Boileplate v2',
+      items: [
+        'boilerplate/overview',
+        'boilerplate/install',
+        'boilerplate/cli',
+        'boilerplate/configs',
+        'boilerplate/proxy-setup',
+        'boilerplate/mock-server',
+        'boilerplate/npm-install',
+      ]
+    },
     {
       type: 'doc',
       id: 'videos'
