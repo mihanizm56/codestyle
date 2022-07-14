@@ -23,7 +23,7 @@ module.exports = {
   baseUrl: '/codestyle/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
-  favicon: 'favicon.ico',
+  favicon: 'img/logo.svg',
   organizationName: 'mihanizm56',
   projectName: 'Codestyle',
   themeConfig: {
