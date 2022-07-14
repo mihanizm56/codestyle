@@ -33,7 +33,7 @@ module.exports = {
     navbar: {
       logo: {
         alt: 'Codestyle Logo',
-        src: 'logo.png',
+        src: 'img/logo.svg',
       },
       items: [
         {
