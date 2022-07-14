@@ -15,7 +15,7 @@ const membersPureValues: MembersFieldsPureType = yield select(
 );
 ```
 
-- mapStateToProps типизируется с помощью тив стейтов из redux модулей 
+- mapStateToProps типизируется с помощью частичных типов стейтов из redux модулей 
 
 ```typescript
 import {

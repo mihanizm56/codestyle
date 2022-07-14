@@ -125,3 +125,35 @@ export type UserFormatterParamsType = {...}
 ```typescript
 export type UserFormatterOutputType = {...}
 ```
+
+Типы массивов пишем через Array
+
+```typescript
+
+// good
+export type TestsType = Array<TestType>
+
+// bad
+export type TestsType = TestType[]
+```
+
+Типы объектов пишем через Record, но допускается типизация базовыми средствами. Но не Object.
+
+```typescript
+// best
+export type TestType = Record<string,number>
+
+// good enough
+export type TestType = {
+[key:string]: number
+}
+
+// mixing
+export type TestType = {
+  foo: number;
+  [key:string]: number
+}
+
+// bad
+export type TestType = Object
+```

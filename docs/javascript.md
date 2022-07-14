@@ -4,10 +4,38 @@ title: Общие правила написания javascript
 
 import Link from '@docusaurus/Link';
 
+### Именование переменных
+Не допускается писать переменные i,j,k,idx,clx,cls. Не допускается писать переменные менее 3х букв кроме работы с библиотекой classnames.
+Не допускается писать переменные через _ префиксом или целиком
+Полезно опираться при именовании на <Link to='https://ymatuhin.ru/front-end/how-to-name-variables/'>статью</Link>.
+
+```javascript
+import React, { memo, useMemo } from 'react';
+import classnames from 'classnames/bind';
+
+// good enough
+const cn = classnames.bind(styles);
+
+// best
+const test = someArray.map((item,index) =>index)
+
+// bad
+const test = someArray.map((i,idx) =>idx)
+
+// bad
+const test = someArray.map((_,index) =>index)
+
+// bad
+const test = someArray.map((_item,index) =>index)
+```
+
 ### Классы
 Классы допустимы к написанию в классовых компонентах и нежелательны к написанию в утилитах, форматтерах и других обычных функциях. 
 - У классов плохой three-shake
 - Классы чуть сложнее читаются чем стрелочные функции
+
+### Чистота функций
+Форматтеры, преобразователи, получатели значений и остальные функции обязаны быть чистыми насколько это возможно. Допускается внутри функции использовать функции библиотек, которые также будут чистыми
 
 ### Используем только стрелочные функции
 Запрещается использовать function declaration. Пишем все функции стрелочными для единообразия.
@@ -41,7 +69,7 @@ Mobile
 
 
 ### Именование сущностей (форматтеры, утилиты)
-Необходимо в именах функций-форматтерах респонса писать постфикс formatter для более точного понимания кода.
+Необходимо в именах функций-форматтерах респонса писать постфикс либо в части названия formatter(formatted) для более точного понимания кода.
 Необходимо в фукциях-получателях значений писать префикс get. Кроме селекторов redux.
 Полезно опираться при именовании на <Link to='https://ymatuhin.ru/front-end/how-to-name-variables/'>статью</Link>.
 
@@ -123,4 +151,61 @@ export const foo = ({param1, param2}: ParamsType) => {...}
 
 
 export const bar = (param1: string) => {...}
+```
+
+
+### Операторы преобразования
+- Используем Boolean(param) вместо  !!param
+- Используем `${param}` вместо String(param)
+- Используем Number(param) вместо +param
+
+
+### Операторы работы с массивами
+- Используем es6 операторы (forEach,map,reduce) вместо es5 (for,while,do) кроме вотчер-саг
+
+
+### Основные паттерны работы с кодом
+- Функциональная декомпозиция
+
+```javascript
+// Абстрагируясь от типов и реальной логики в жизни
+
+// Описываем высокоуровневую функцию и по шагам описываем этапы
+// Далее реализуем эти функции
+
+// src/_utils/some-function/index.ts
+export const getFormattedUsers = () => {...}
+
+// src/_utils/some-function/get-users-tickets-full-price.ts
+export const getUsersTicketsFullPrice = () => {...}
+
+// src/_utils/some-function/get-comission.ts
+export const getComission = () => {...}
+
+// src/_utils/some-function/get-result-sum.ts
+export const getResultSum = () => {...}
+
+// src/_utils/some-function/index.ts
+export const someFunction = (users: ParamsType): OutputType => {
+  // получам форматтированных юзеров
+  const formattedUsers = getFormattedUsers(users);
+
+  // получаем полную сумму по билетам
+  const usersTicketsFullPrice = getUsersTicketsFullPrice(formattedUsers)response;
+
+  // получаем посчитанную комиссию
+  const comission = getComission({
+    formattedUsers,
+    usersTicketsFullPrice,
+  });
+
+  // выполняем доп преобразования и вычисления
+  const resultSum = getResultSum({
+    formattedUsers,
+    usersTicketsFullPrice,
+    comission
+  });
+
+  return resultSum;
+}
 ```

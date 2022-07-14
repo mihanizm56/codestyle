@@ -21,7 +21,8 @@ module.exports = {
       label: 'Работа с библиотеками',
       items: [
         'libraries/project-libs',
-        'libraries/rules'
+        'libraries/rules',
+        'libraries/routes'
       ]
     },
     {
