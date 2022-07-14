@@ -13,7 +13,7 @@ const Home = () => {
   return (
     <Layout
       title={siteConfig.title}
-      description="Description will go into a meta tag in <head />">
+      description="Документация по написанию проектов">
       <header className={clsx('hero', styles.heroBanner)}>
         <div className="container">
           <h1 className={clsx(styles['hero__title'])}>{siteConfig.title}</h1>
