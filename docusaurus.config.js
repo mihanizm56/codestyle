@@ -1,21 +1,6 @@
 const dotenv = require('dotenv');
 dotenv.config();
 
-// const algoliaParams = {
-//   apiKey: process.env.ALGOLIA_API_KEY || '',
-//   indexName: process.env.ALGOLIA_INDEX_NAME || '',
-//   contextualSearch: true,
-//   inputSelector:'.DocSearch',
-//   searchParameters: {
-//     facetFilters: [
-//       `type:${process.env.ALGOLIA_FACET_FILTERS_TYPE || ''}`, 
-//       `version:${process.env.ALGOLIA_FACET_FILTERS_VERSION || ''}`, 
-//       `language:${process.env.ALGOLIA_FACET_FILTERS_LANGUAGE || ''}`, 
-//       `docusaurus_tag:${process.env.ALGOLIA_FACET_FILTERS_DOCUSAURUS_TAG || ''}`
-//     ]
-//   },
-// }
-
 module.exports = {
   title: 'Codestyle',
   tagline: 'Документация по написанию проектов',
@@ -29,7 +14,6 @@ module.exports = {
   themeConfig: {
     theme: require('prism-react-renderer/themes/github'),
     hideableSidebar: true,
-    // algolia: algoliaParams,
     navbar: {
       logo: {
         alt: 'Codestyle Logo',
