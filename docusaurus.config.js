@@ -5,7 +5,7 @@ module.exports = {
   title: 'Codestyle',
   tagline: 'Документация по написанию проектов',
   url: 'https://mihanizm56.github.io',
-  baseUrl: '/codestyle/',
+  baseUrl: '/suppliers-portal-eu/ui/codestyle/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/logo.svg',
