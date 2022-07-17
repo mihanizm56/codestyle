@@ -9,10 +9,10 @@ pages:
   stage: release
   allow_failure: false
   script:
-    - npm ci && npm run build
+    - npm ci && npm run build && cp -R build public
   artifacts:
     paths:
-      - build # GitLab pages serve from a 'public' directory
+      - public # GitLab pages serve from a 'public' directory
   rules:
     - if: '$CI_COMMIT_TAG'
       when: on_success
