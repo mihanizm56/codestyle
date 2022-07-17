@@ -9,7 +9,7 @@ pages:
   stage: release
   allow_failure: false
   script:
-    - npm ci && npm run build && cp -R build public
+    - npm ci && npm run build && mv ./build ../public
   artifacts:
     paths:
       - public # GitLab pages serve from a 'public' directory
