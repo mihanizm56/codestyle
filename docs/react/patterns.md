@@ -112,3 +112,47 @@ export const Contacts = memo(({ empty }) => {
 ### Переводы
 В проектах используются переводы и библиотека i18next. Это позволяет менять тексты без деплоя проекта. Кэш переводов выставлен на сутки. Но может быть сброшен в проекте. Достаточно указать что искользуется версионирование запроса к апи переводов и будет подставлена версия из гит тага.
 Также использован ICU формат для склонения переводов.
+
+
+### JSX
+Нужно отбивать пробелом react-компоненты от html-элементов разметки. Между собой html-элементы не отбиваются, как и react-компоненты 
+
+```typescript
+    <div className={cn(BLOCK_NAME)}>
+      <div className={cn(`${BLOCK_NAME}__container`,{
+        [`${BLOCK_NAME}__container--empty`]: empty
+      })}>
+        <ButtonLink
+          isTextLeft
+          routeName={i18next.t(PAGE_CONTENT_TRANSLATIONS.helpPhone)}
+          target="_blank"
+          text={i18next.t(PAGE_CONTENT_TRANSLATIONS.numberPhone)}
+          textColor="darkPurple"
+          variant="link"
+        >
+          {PhoneIcon}
+        </ButtonLink>
+        <ButtonLink
+          isTextLeft
+          routeName={`mailto:${i18next.t(PAGE_CONTENT_TRANSLATIONS.helpMail)}`}
+          target="_blank"
+          text={i18next.t(PAGE_CONTENT_TRANSLATIONS.helpMail)}
+          textColor="darkPurple"
+          variant="link"
+        >
+          {MailIcon}
+        </ButtonLink>
+      </div>
+
+      <ButtonLink
+        isTextLeft
+        routeName={`mailto:${i18next.t(PAGE_CONTENT_TRANSLATIONS.helpMail)}`}
+        target="_blank"
+        text={i18next.t(PAGE_CONTENT_TRANSLATIONS.helpMail)}
+        textColor="darkPurple"
+        variant="link"
+      >
+        {MailIcon}
+      </ButtonLink>
+    </div>
+```
