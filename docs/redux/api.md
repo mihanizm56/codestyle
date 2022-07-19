@@ -95,5 +95,8 @@ export const getUserDataEndpoint = () =>
   process.env.NODE_ENV !== 'production'
     ? ENDPOINT_USER_DATA_DEV
     : ENDPOINT_USER_DATA_PROD;
+
+
+export const getUserCreditEndpoint = (id: string) => `${getUserDataEndpoint}/credits/${id}`
 ```
 
