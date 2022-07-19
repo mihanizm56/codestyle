@@ -6,6 +6,7 @@ module.exports = {
   tagline: 'Документация по написанию проектов',
   url: 'https://mihanizm56.github.io',
   baseUrl: '/codestyle/',
+  // gitlab
   // baseUrl: '/suppliers-portal-eu/ui/codestyle/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
