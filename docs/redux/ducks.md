@@ -10,6 +10,20 @@ import Link from '@docusaurus/Link';
 Он подразумевает деление стора на домены(модули, разделенные по соответствующим смыслу данных).
 Каждый модуль может содержать помимо расшаренных папок и файлов (_utils, _constants,...)
 
+Модули должны находиться в разных папках
+
+```
+├── _redux    
+│   ├── users-module
+|   └── ...
+│   ├── basket-module
+|   └── ...
+│   ├── suppliers-module
+|   └── ...
+└── ...
+```
+
+```
 ├── actions.ts - Экшены модуля
 ├── reducer.ts – Редюсер
 ├── selectors.ts – Селекторы
@@ -20,5 +34,8 @@ import Link from '@docusaurus/Link';
 │   ├── some-name – папка с сагами
 |   |   ├── some-name-worker-saga.ts – вотчер сага    
 |   |   ├── some-name-watcher-saga.ts – воркер сага     
-|   |   └── index.ts – ре-экспорт сущностей
+|   |   └── index.ts – ре-экспорт вотчер саги
+|   └── index.ts – ре-экспорт вотчер саг
 └── ...
+```
+
